@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "marked": "~0.3.2",
-    "scribe": "~0.1.17"
+    "scribe": "~0.1.17",
+    "ractive": "~0.5.5"
   }
 }
