@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DBozhinovski/awesomepad2/issues"
   },
-  "homepage": "https://github.com/DBozhinovski/awesomepad2"
+  "homepage": "https://github.com/DBozhinovski/awesomepad2",
+  "devDependencies": {
+    "browserify": "^5.0.7"
+  }
 }
