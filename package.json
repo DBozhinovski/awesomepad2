@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/DBozhinovski/awesomepad2",
   "devDependencies": {
-    "browserify": "^5.0.7"
+    "browserify": "^5.0.7",
+    "vinyl-source-stream": "^0.1.1",
+    "watchify": "^1.0.0"
   }
 }
