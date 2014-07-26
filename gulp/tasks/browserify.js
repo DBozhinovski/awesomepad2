@@ -13,7 +13,9 @@ gulp.task('browserify', function() {
 		// Specify the entry point of your app
 		entries: ['./src/app.js'],
 		// Add file extentions to make optional in your requires
-		extensions: ['.js', '.ractive']
+		extensions: ['.js', '.ractive'],
+		debug: true,
+
 	});
 
 	var bundle = function() {
@@ -22,7 +24,7 @@ gulp.task('browserify', function() {
 
 		return bundler
 			// Enable source maps!
-			.bundle({debug: true})
+			.bundle()
 			// Report compile errors
 			.on('error', handleErrors)
 			// Use vinyl-source-stream to make the
@@ -30,7 +32,7 @@ gulp.task('browserify', function() {
 			// desired output filename here.
 			.pipe(source('app.js'))
 			// Specify the output destination
-			.pipe(gulp.dest('./build/'))
+			.pipe(gulp.dest('./public/js/'))
 			// Log when bundling completes!
 			.on('end', bundleLogger.end);
 	};

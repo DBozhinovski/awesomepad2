@@ -1,6 +1,9 @@
+/* jshint node:true */
+"use strict";
+
 var fs = require('fs');
-var tasks = fs.readdir('./gulp/tasks/', function(error, files){
-  files.forEach(function(task){
-    require('./tasks/' + task);
-  });
+var tasks = fs.readdirSync('./gulp/tasks/');
+
+tasks.forEach(function(task) {
+	require('./tasks/' + task);
 });
