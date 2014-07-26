@@ -1,8 +1,8 @@
 var browserify   = require('browserify');
 var watchify     = require('watchify');
-var bundleLogger = require('../util/bundleLogger');
+var bundleLogger = require('../util/bundle-logger');
 var gulp         = require('gulp');
-var handleErrors = require('../util/handleErrors');
+var handleErrors = require('../util/handle-errors');
 var source       = require('vinyl-source-stream');
 
 gulp.task('browserify', function() {
