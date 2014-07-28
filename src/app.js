@@ -1,4 +1,6 @@
 /* jshint node:true */
-"use strict"; 
+"use strict";
+
+var Ractive = require('ractive');
 
 console.log("hello world");
