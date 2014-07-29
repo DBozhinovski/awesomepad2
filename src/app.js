@@ -1,6 +1,14 @@
 /* jshint node:true */
 "use strict";
 
-var Ractive = require('ractive');
+var $ = require('jquery');
+var Backbone = require('backbone');
+Backbone.$ = $;
 
-console.log("hello world");
+
+$(function(){
+
+  // Routes here
+  Backbone.history.start();
+
+});

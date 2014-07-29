@@ -17,6 +17,8 @@
   "dependencies": {
     "marked": "~0.3.2",
     "scribe": "~0.1.17",
-    "ractive": "~0.5.5"
+    "ractive": "~0.5.5",
+    "jquery": "~2.1.1",
+    "backbone": "~1.1.2"
   }
 }
