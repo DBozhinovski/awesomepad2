@@ -4,7 +4,6 @@
 var Backbone = require('backbone');
 var HomeView = require('./views/home');
 
-
 var Router = Backbone.Router.extend({
   routes: {
     '': 'home',
