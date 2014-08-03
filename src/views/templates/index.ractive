@@ -1,4 +1,13 @@
 <ul>
   <li><a href='#new'>New</a></li>
   <li><a href='#open'>Open</a></li>
+  {{#browse}}
+    Browse mode
+  {{/browse}}
+  {{#edit}}
+    Edit mode
+  {{/edit}}
+  {{#open}}
+    Open file
+  {{/open}}
 </ul>
