@@ -5,7 +5,8 @@
     Browse mode
   {{/browse}}
   {{#edit}}
-    Edit mode
+    Edit mode <br/>
+    {{>editor}}
   {{/edit}}
   {{#open}}
     Open file
