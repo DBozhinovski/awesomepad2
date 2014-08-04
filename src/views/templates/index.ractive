@@ -3,6 +3,7 @@
   <li><a href='#open'>Open</a></li>
   {{#browse}}
     Browse mode
+    {{>browse}}
   {{/browse}}
   {{#edit}}
     Edit mode <br/>
