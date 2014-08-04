@@ -16,17 +16,14 @@ var Router = Backbone.Router.extend({
   },
 
   home: function(){
-    console.log('home');
     this.homeView.set({browse: true, edit: false, open: false});
   },
 
   new: function(){
-    console.log('new');
     this.homeView.set({browse: false, edit: true, open: false});
   },
 
   open: function(){
-    console.log('open');
     this.homeView.set({browse: false, edit: false, open: true});
   }
 });
