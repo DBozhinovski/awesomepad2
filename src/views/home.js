@@ -14,6 +14,12 @@ var Home = Ractive.extend({
   partials: {
     editor: (editor.toString()),
     browse: (browse.toString())
+  },
+  init: function(){
+    this.on('open', this.open);
+  },
+  open: function(){
+    console.log('opening file');
   }
 });
 

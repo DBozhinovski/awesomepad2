@@ -10,6 +10,6 @@
     {{>editor}}
   {{/edit}}
   {{#open}}
-    Open file
+    <button on-click='open'>Open file</button>
   {{/open}}
 </ul>
