@@ -11,5 +11,6 @@
   {{/edit}}
   {{#open}}
     <button on-click='open'>Open file</button>
+    <div id='drop'></div>
   {{/open}}
 </ul>

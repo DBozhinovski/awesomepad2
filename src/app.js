@@ -7,6 +7,8 @@ Backbone.$ = $;
 
 var Router = require('./routes.js');
 
+
+// domready instead of jquery, maybe lose backbone as well?
 $(function(){
 
   new Router();
