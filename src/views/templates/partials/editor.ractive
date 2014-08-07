@@ -1,2 +1,5 @@
 <input type='text' placeholder='title' value='{{title}}'/> <br/>
-<textarea>{{content}}</textarea>
+<textarea>{{content}}</textarea> <br/>
+
+<button on-click='back'>back</button>
+<button on-click='save'>save</button>
