@@ -8,6 +8,7 @@
   </nav>
 </header>
 
+<!-- perhaps a more semantic element? -->
 <div class='main'>
   {{#browse}}
     Browse mode
