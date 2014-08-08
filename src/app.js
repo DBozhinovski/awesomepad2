@@ -7,7 +7,8 @@ Backbone.$ = $;
 
 var Router = require('./routes.js');
 
-
+//ToDo: gulp task for stylus
+//ToDo: pouch db for storing documents / notes
 // domready instead of jquery, maybe lose backbone as well?
 $(function(){
 
