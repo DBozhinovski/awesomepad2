@@ -9,3 +9,5 @@ var Document = Backbone.Model.extend({
 
   }
 });
+
+module.exports = Document;
