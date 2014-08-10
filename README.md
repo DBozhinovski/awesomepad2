@@ -9,4 +9,5 @@ CoffeeScript, as a tool to teach the basics of CoffeeScript (in a course I autho
 
 
 * Take a look at the available adapters for couchdb / pouchdb sync
-*
+* Add a pouchdb dependency and a backbone plugin for pouchdb
+* Get the backbone adaptor for ractive 
