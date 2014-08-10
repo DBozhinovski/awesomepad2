@@ -3,6 +3,8 @@
 
 var Backbone = require('backbone');
 
+// Needs pouch db
+
 var Document = Backbone.Model.extend({
   // should go to pouch DB
   initalize: function(){
