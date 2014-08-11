@@ -19,6 +19,7 @@
     "scribe": "~0.1.17",
     "ractive": "~0.5.5",
     "jquery": "~2.1.1",
-    "backbone": "~1.1.2"
+    "backbone": "~1.1.2",
+    "pouchdb": "~2.2.3"
   }
 }
