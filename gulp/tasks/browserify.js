@@ -4,6 +4,8 @@ var bundleLogger = require('../util/bundle-logger');
 var gulp         = require('gulp');
 var handleErrors = require('../util/handle-errors');
 var source       = require('vinyl-source-stream');
+var streamify 	 = require('gulp-streamify');
+var uglify			 = require('gulp-uglify');
 
 gulp.task('browserify', function() {
 
@@ -14,8 +16,7 @@ gulp.task('browserify', function() {
 		entries: ['./src/app.js'],
 		// Add file extentions to make optional in your requires
 		extensions: ['.js', '.ractive'],
-		debug: true,
-
+		debug: true
 	});
 
 	var bundle = function() {
@@ -31,6 +32,8 @@ gulp.task('browserify', function() {
 			// stream gulp compatible. Specifiy the
 			// desired output filename here.
 			.pipe(source('app.js'))
+			// Streamify + uglify, since gulp-uglify doesn't like streaming
+			.pipe(streamify(uglify()))
 			// Specify the output destination
 			.pipe(gulp.dest('./public/js/'))
 			// Log when bundling completes!
