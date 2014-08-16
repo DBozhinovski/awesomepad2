@@ -3,6 +3,7 @@
 
 var Backbone = require('backbone');
 var HomeView = require('./views/home');
+var Document = require('./models/document');
 
 var Router = Backbone.Router.extend({
   routes: {
@@ -20,7 +21,7 @@ var Router = Backbone.Router.extend({
   },
 
   new: function(){
-    this.homeView.set({browse: false, edit: true, open: false});
+    this.homeView.set({browse: false, edit: true, open: false, doc: new Document() });
   },
 
   open: function(){

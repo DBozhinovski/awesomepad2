@@ -3,6 +3,7 @@
 
 var Ractive = require('ractive');
 require('ractive-adaptors-backbone');
+
 var fs = require('fs');
 
 var template = fs.readFileSync(__dirname + '/templates/index.ractive');
