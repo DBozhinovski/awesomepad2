@@ -1,5 +1,5 @@
-<input type='text' placeholder='title' value='{{title}}'/> <br/>
-<textarea>{{content}}</textarea> <br/>
+<input type='text' placeholder='title' value='{{doc.title}}'/> <br/>
+<textarea value='{{doc.content}}'></textarea> <br/>
 
 <button on-click='back'>back</button>
 <button on-click='save'>save</button>
