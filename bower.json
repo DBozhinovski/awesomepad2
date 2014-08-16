@@ -21,7 +21,6 @@
     "jquery": "~2.1.1",
     "backbone": "~1.1.2",
     "pouchdb": "~2.2.3",
-    "backbone-pouchdb": "*",
     "ractive-adaptors-backbone": "~0.1.1"
   }
 }

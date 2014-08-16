@@ -28,6 +28,7 @@ var Home = Ractive.extend({
     console.log('opening file');
   },
   save: function(){
+    this.data.doc.save();
     console.log(this.data);
   }
 });

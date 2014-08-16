@@ -32,5 +32,8 @@
       "debowerify",
       "brfs"
     ]
+  },
+  "dependencies": {
+    "backbone-pouch": "^1.4.0"
   }
 }

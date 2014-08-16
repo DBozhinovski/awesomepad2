@@ -2,14 +2,14 @@
 "use strict";
 
 var Backbone = require('backbone');
-
-// Needs pouch db
+var PouchDB = require('pouchdb');
+var BackbonePouch = require('backbone-pouch');
 
 var Document = Backbone.Model.extend({
-  // should go to pouch DB
-  initalize: function(){
-
-  }
+  idAttribute: '_id',
+  sync: BackbonePouch.sync({
+    db: new PouchDB('docs'),
+  })
 });
 
 module.exports = Document;
