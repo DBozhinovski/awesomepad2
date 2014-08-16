@@ -24,7 +24,6 @@ gulp.task('browserify', function() {
 		bundleLogger.start();
 
 		return bundler
-			// Enable source maps!
 			.bundle()
 			// Report compile errors
 			.on('error', handleErrors)
@@ -33,7 +32,9 @@ gulp.task('browserify', function() {
 			// desired output filename here.
 			.pipe(source('app.js'))
 			// Streamify + uglify, since gulp-uglify doesn't like streaming
-			.pipe(streamify(uglify()))
+			.pipe(streamify(uglify({
+				preserveComments: 'all'
+			})))
 			// Specify the output destination
 			.pipe(gulp.dest('./public/js/'))
 			// Log when bundling completes!
