@@ -10,8 +10,6 @@ var template = fs.readFileSync(__dirname + '/templates/index.ractive');
 var editor = fs.readFileSync(__dirname + '/templates/partials/editor.ractive');
 var browse = fs.readFileSync(__dirname + '/templates/partials/browse.ractive');
 
-// Needs backbone adaptor
-
 var Home = Ractive.extend({
   el: 'body',
   template: (template.toString()),
