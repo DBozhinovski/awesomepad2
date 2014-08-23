@@ -22,5 +22,8 @@
     "backbone": "~1.1.2",
     "pouchdb": "~2.2.3",
     "ractive-adaptors-backbone": "~0.1.1"
+  },
+  "devDependencies": {
+    "compiler-latest": "http://dl.google.com/closure-compiler/compiler-latest.zip"
   }
 }
