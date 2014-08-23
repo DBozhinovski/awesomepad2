@@ -8,7 +8,7 @@ gulp.task('closure', function(){
       fileName: 'app.min.js',
       compilerFlags: {
         language_in: "ECMASCRIPT5", // not all external libs use "strict"
-        warning_level: "QUIET"
+        warning_level: "QUIET" // It outputs nothing if set to DEFAULT / VERBOSE
       },
     }))
     .pipe(gulp.dest('./public/js/'));
