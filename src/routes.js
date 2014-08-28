@@ -1,5 +1,4 @@
-/* jshint node:true */
-"use strict";
+'use strict';
 
 var Backbone = require('backbone');
 var HomeView = require('./views/home');
@@ -29,4 +28,4 @@ var Router = Backbone.Router.extend({
   }
 });
 
-module.exports = Router;
+module.exports = new Router();
