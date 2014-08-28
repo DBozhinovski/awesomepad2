@@ -1,5 +1,4 @@
-/* jshint node:true, eqeqeq:true */
-"use strict";
+'use strict';
 
 var Ractive = require('ractive');
 require('ractive-adaptors-backbone');
