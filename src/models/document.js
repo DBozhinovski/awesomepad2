@@ -1,5 +1,4 @@
-/* jshint node:true, eqeqeq:true */
-"use strict";
+'use strict';
 
 var Backbone = require('backbone');
 var PouchDB = require('pouchdb');
