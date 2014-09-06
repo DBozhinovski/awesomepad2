@@ -1,4 +1,4 @@
-<header>
+<aside class='sidebar'>
   <h1>AwesomePad 2</h1>
   <nav>
     <ul>
@@ -6,7 +6,7 @@
       <li><a href='#open'>Open</a></li>
     </ul>
   </nav>
-</header>
+</aside>
 
 <!-- perhaps a more semantic element? -->
 <div class='main'>
