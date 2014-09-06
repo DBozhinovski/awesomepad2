@@ -7,7 +7,7 @@ var ecstatic = require('ecstatic');
 
 gulp.task('server', function(){
   http.createServer(
-    ecstatic({root: './public'})
+    ecstatic({ root: './public' })
   ).listen(8090);
 
   gutil.log('Listening on', gutil.colors.green(':8090'));

@@ -1,13 +1,16 @@
+'use strict';
+
 var browserify   = require('browserify');
-var watchify     = require('watchify');
-var bundleLogger = require('../util/bundle-logger');
+// var watchify     = require('watchify');
+var bundleLogger = require('../util/bundleLogger');
 var gulp         = require('gulp');
-var handleErrors = require('../util/handle-errors');
+var handleErrors = require('../util/handleErrors');
 var source       = require('vinyl-source-stream');
 
 gulp.task('browserify', function() {
 
-	var bundleMethod = global.isWatching ? watchify : browserify;
+	// var bundleMethod = global.isWatching ? watchify : browserify;
+	var bundleMethod = browserify;
 
 	var bundler = bundleMethod({
 		// Specify the entry point of your app
@@ -22,6 +25,7 @@ gulp.task('browserify', function() {
 		bundleLogger.start();
 
 		return bundler
+			// Enable source maps!
 			.bundle()
 			// Report compile errors
 			.on('error', handleErrors)
@@ -30,11 +34,12 @@ gulp.task('browserify', function() {
 			// desired output filename here.
 			.pipe(source('app.js'))
 			// Specify the output destination
-			.pipe(gulp.dest('./public/js/'))
+			.pipe(gulp.dest('./public/javascripts/'))
 			// Log when bundling completes!
 			.on('end', bundleLogger.end);
 	};
 
+	// smell?
 	if(global.isWatching) {
 		// Rebundle with watchify on changes.
 		bundler.on('update', bundle);
