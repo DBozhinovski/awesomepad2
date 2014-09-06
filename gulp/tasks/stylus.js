@@ -9,6 +9,6 @@ var nib = require('nib');
 gulp.task('stylus', function(){
   return gulp.src('./src/styles/**/*.styl')
     .pipe(stylus({use: [nib()]}))
-    .pipe(concat('app.css'))
-    .pipe(gulp.dest('./public/stylesheets/'));
+    .pipe(concat('styles.css'))
+    .pipe(gulp.dest('./public/css/'));
 });

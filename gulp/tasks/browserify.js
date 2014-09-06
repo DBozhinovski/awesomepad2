@@ -34,7 +34,7 @@ gulp.task('browserify', function() {
 			// desired output filename here.
 			.pipe(source('app.js'))
 			// Specify the output destination
-			.pipe(gulp.dest('./public/javascripts/'))
+			.pipe(gulp.dest('./public/js/'))
 			// Log when bundling completes!
 			.on('end', bundleLogger.end);
 	};
