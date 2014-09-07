@@ -31,3 +31,15 @@
   </div>
 </div>
 </div> -->
+<div id='layout'>
+  <div class='sidebar'>
+    <div class="pure-menu pure-menu-open">
+        <h1>AwesomePad 2</h1>
+    </div>
+  </div>
+
+  <div id='main'>
+    Content
+  </div>
+
+</div>
