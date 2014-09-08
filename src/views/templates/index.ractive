@@ -35,6 +35,10 @@
   <div class='sidebar'>
     <div class="pure-menu pure-menu-open">
         <h1>AwesomePad 2</h1>
+
+        <ul>
+          <li><a href='#'>Links</a></li>
+        </ul>
     </div>
   </div>
 
