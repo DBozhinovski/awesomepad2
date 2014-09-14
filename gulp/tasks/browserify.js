@@ -14,7 +14,7 @@ gulp.task('browserify', function() {
 		extensions: ['.js', '.ractive'],
 		debug: true,
 		cache: {},
-		pacakgeCache: {},
+		packageCache: {},
 		fullPaths: true
 	}));
 
