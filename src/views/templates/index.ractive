@@ -1,58 +1,18 @@
-<!-- <div class='content'>
-<div class="pure-menu pure-menu-open">
-    <a class="pure-menu-heading">Yahoo! Sites</a>
-
-    <ul>
-        <li><a href="#">Flickr</a></li>
-        <li><a href="#">Messenger</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Finance</a></li>
-        <li class="pure-menu-heading">More Sites!</li>
-        <li><a href="#">Games</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">OMG!</a></li>
-    </ul>
-</div>
-<div class="pure-g">
-  <!-- perhaps a more semantic element? -->
-  <!-- <div class='main pure-u-1-1'>
-    {{#browse}}
-      Browse mode
-      {{>browse}}
-    {{/browse}}
-    {{#edit}}
-      Edit mode <br/>
-      {{>editor}}
-    {{/edit}}
-    {{#open}}
-      <button on-click='open'>Open file</button>
-      <div id='drop'></div>
-    {{/open}}
-  </div>
-</div>
-</div> -->
-<!-- <div id='layout'>
-  <div class='sidebar'>
-    <div class="pure-menu pure-menu-open">
-        <h1>AwesomePad 2</h1>
-
-        <ul>
-          <li><a href='#'>Links</a></li>
-        </ul>
-    </div>
-  </div>
-
-  <div id='main'>
-    Content
-  </div>
-
-</div> -->
-
 <div class='root'>
   <aside class='sidebar'>
-    Sidebar
+    <ul>
+      <li><a href='#'>Browse</a></li>
+      <li><a href='#new'>New</a></li>
+      <li><a href='#open'>Open</a></li>
+    </ul>
   </aside>
   <main>
-    Main
+    {{#browse}}
+      {{>browse}}
+    {{/browse}}
+
+    {{#edit}}
+      {{>editor}}
+    {{/edit}}
   </main>
 </div>
