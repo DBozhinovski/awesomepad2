@@ -1,5 +1,6 @@
 <div class='root'>
   <aside class='sidebar'>
+    <h1>AwesomePad 2</h1>
     <ul>
       <li><a href='#'>Browse</a></li>
       <li><a href='#new'>New</a></li>
