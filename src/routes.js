@@ -3,6 +3,8 @@
 var Backbone = require('backbone');
 var HomeView = require('./views/home');
 var Document = require('./models/document');
+var Documents = require('./collections/documents');
+global.Documents = Documents;
 
 var Router = Backbone.Router.extend({
   routes: {
