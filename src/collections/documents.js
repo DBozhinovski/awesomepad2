@@ -15,12 +15,8 @@ var Documents = Backbone.Collection.extend({
       query: {
         include_docs: true,
         fun: {
-          map: function(doc) {
-            if (doc.type === 'document') {
-              console.log(doc);
-              // emit(doc.position, null);
-              return doc;
-            }
+          map: function(doc){
+            emit(doc.position, null);
           }
         },
         limit: 10
