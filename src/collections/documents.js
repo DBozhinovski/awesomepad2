@@ -15,9 +15,14 @@ var Documents = Backbone.Collection.extend({
       query: {
         include_docs: true,
         fun: {
+          /* jshint ignore:start */
+          // Since it's a scope thing, this isn't undefined;
+          // However, jshint still hates it, and rightfully so.
+          // So, I'll just ignore it for now :)
           map: function(doc){
             emit(doc.position, null);
           }
+          /* jshint ignore:end */
         },
         limit: 10
       }
