@@ -15,6 +15,10 @@ var Router = Backbone.Router.extend({
 
   initialize: function(){
     this.homeView = new HomeView();
+    global.home = this.homeView;
+    this.documents = new Documents();
+    this.documents.fetch();
+    this.homeView.set({documents: this.documents});
   },
 
   home: function(){

@@ -1,3 +1,10 @@
 <ul>
-  <li>Document list here</li>
+  {{#each documents}}
+    <li>
+      {{#.rows}}
+        {{.doc.title}}
+      {{/.rows}}
+    </li>
+  {{/each}}
+  <!-- <li>Document list here</li> -->
 </ul>
