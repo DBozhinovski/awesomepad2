@@ -1,10 +1,13 @@
 <ul>
-  {{#each documents}}
-    <li>
-      {{#.rows}}
-        {{.doc.title}}
-      {{/.rows}}
-    </li>
-  {{/each}}
-  <!-- <li>Document list here</li> -->
+  {{#if documents}}
+    {{#each documents}}
+      <li>
+        {{#.rows}}
+          {{.doc.title}}
+        {{/.rows}}
+      </li>
+    {{/each}}
+  {{else}}
+    <li>No documents yet. <a href='#new'>Add one?</a></li>
+  {{/if}}
 </ul>
