@@ -7,3 +7,7 @@ CoffeeScript, as a tool to teach the basics of CoffeeScript (in a course I autho
 ### References
 
 * Color scheme: https://kuler.adobe.com/Mocha-color-theme-4226301/
+
+### To Do
+
+* Change partials to isolated components / separate ractives (in order not to mix up data)
