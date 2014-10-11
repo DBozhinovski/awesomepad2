@@ -18,15 +18,18 @@ var Home = Ractive.extend({
     browse: (browse.toString())
   },
   init: function(){
-    this.on('open', this.open);
-    this.on('save', this.save);
+    this.on({
+      open: this.open,
+      save: this.open
+    });
   },
   open: function(){
     console.log('opening file');
   },
-  save: function(){
-    this.data.doc.save();
-    console.log(this.data);
+  save: function(event){
+    console.log(event);
+    // this.data.doc.save();
+    // console.log(this.data);
   }
 });
 
