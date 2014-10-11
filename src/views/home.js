@@ -28,8 +28,8 @@ var Home = Ractive.extend({
   },
   save: function(event){
     console.log(event);
+    // Not working, needs isolation
     // this.data.doc.save();
-    // console.log(this.data);
   }
 });
 
