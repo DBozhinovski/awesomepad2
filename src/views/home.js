@@ -26,8 +26,7 @@ var Home = Ractive.extend({
   open: function(){
     console.log('opening file');
   },
-  save: function(event){
-    console.log(event);
+  save: function(){
     // Not working, needs isolation
     // this.data.doc.save();
   }
