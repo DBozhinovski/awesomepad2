@@ -20,15 +20,21 @@ var Home = Ractive.extend({
   onrender: function(){
     this.on({
       open: this.open,
-      save: this.open
+      save: this.save
     });
   },
   open: function(){
     console.log('opening file');
   },
-  save: function(){
+  save: function(event){
+    // console.log(event);
     // Not working, needs isolation
-    this.data.doc.save();
+    // this.getdoc.save();
+    event.context.documents.add(event.context.doc);
+    event.context.doc.save();
+    // console.log(this.get('documents'));
+    // this.get('documents').sync();
+
   }
 });
 

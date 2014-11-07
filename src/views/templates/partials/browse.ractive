@@ -2,9 +2,7 @@
   {{#if documents}}
     {{#each documents}}
       <li>
-        {{#.rows}}
-          {{.doc.title}}
-        {{/.rows}}
+        {{.title}}
       </li>
     {{/each}}
   {{else}}
