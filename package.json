@@ -18,6 +18,7 @@
   "homepage": "https://github.com/DBozhinovski/awesomepad2",
   "devDependencies": {
     "backbone": "^1.1.2",
+    "backbone.localstorage": "^1.1.14",
     "brfs": "^1.2.0",
     "browserify": "^5.11.1",
     "debowerify": "^0.8.1",

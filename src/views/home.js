@@ -17,7 +17,7 @@ var Home = Ractive.extend({
     editor: (editor.toString()),
     browse: (browse.toString())
   },
-  init: function(){
+  onrender: function(){
     this.on({
       open: this.open,
       save: this.open
@@ -28,7 +28,7 @@ var Home = Ractive.extend({
   },
   save: function(){
     // Not working, needs isolation
-    // this.data.doc.save();
+    this.data.doc.save();
   }
 });
 
