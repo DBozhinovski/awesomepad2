@@ -10,7 +10,8 @@ var Router = Backbone.Router.extend({
   routes: {
     '': 'home',
     'new': 'new',
-    'open': 'open'
+    'open': 'open',
+    'show/:id': 'show'
   },
 
   initialize: function(){
@@ -30,6 +31,10 @@ var Router = Backbone.Router.extend({
 
   open: function(){
     this.homeView.set({browse: false, edit: false, open: true});
+  },
+  show: function(id){
+    // Should render the doc
+    console.log(id);
   }
 });
 

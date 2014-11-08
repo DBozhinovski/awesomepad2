@@ -2,7 +2,7 @@
   {{#if documents}}
     {{#each documents}}
       <li>
-        {{.title}}
+        <a href='#/show/{{id}}'>{{.title}}</a>
       </li>
     {{/each}}
   {{else}}
