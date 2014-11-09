@@ -4,17 +4,16 @@
     <ul>
       <li><a href='#'>Browse</a></li>
       <li><a href='#new'>New</a></li>
-      <li><a href='#open'>Open</a></li>
     </ul>
   </aside>
   <main>
     {{!-- These should be put into separate ractives --}}
-    {{#browse}}
+    {{#if routes.browse}}
       {{>browse}}
-    {{/browse}}
+    {{/if}}
 
-    {{#edit}}
+    {{#if routes.edit}}
       {{>editor}}
-    {{/edit}}
+    {{/if}}
   </main>
 </div>

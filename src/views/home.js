@@ -9,6 +9,8 @@ var template = fs.readFileSync(__dirname + '/templates/index.ractive');
 var editor = fs.readFileSync(__dirname + '/templates/partials/editor.ractive');
 var browse = fs.readFileSync(__dirname + '/templates/partials/browse.ractive');
 
+var _ = require('underscore');
+
 var Home = Ractive.extend({
   el: 'body',
   template: (template.toString()),
@@ -22,19 +24,19 @@ var Home = Ractive.extend({
       open: this.open,
       save: this.save
     });
-  },
-  open: function(){
-    console.log('opening file');
+
+    this.observe('route', function(route){
+      // feels a bit hackish, but beats manual setting anyday
+      if(route){
+        var routes = {};
+        routes[route] = true;
+        this.set('routes', routes);
+      }
+    });
   },
   save: function(event){
-    // console.log(event);
-    // Not working, needs isolation
-    // this.getdoc.save();
     event.context.documents.add(event.context.doc);
     event.context.doc.save();
-    // console.log(this.get('documents'));
-    // this.get('documents').sync();
-
   }
 });
 
