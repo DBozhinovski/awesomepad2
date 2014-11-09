@@ -8,6 +8,8 @@ var fs = require('fs');
 var template = fs.readFileSync(__dirname + '/templates/index.ractive');
 var editor = fs.readFileSync(__dirname + '/templates/partials/editor.ractive');
 var browse = fs.readFileSync(__dirname + '/templates/partials/browse.ractive');
+var show = fs.readFileSync(__dirname + '/templates/partials/show.ractive');
+
 
 var Home = Ractive.extend({
   el: 'body',
@@ -15,7 +17,8 @@ var Home = Ractive.extend({
   adapt: ['Backbone'],
   partials: {
     editor: (editor.toString()),
-    browse: (browse.toString())
+    browse: (browse.toString()),
+    show: (show.toString())
   },
   onrender: function(){
     this.on({

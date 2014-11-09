@@ -1,0 +1,4 @@
+{{#doc}}
+  <h1>{{.title}}</h1>
+  {{{content}}}
+{{/doc}}

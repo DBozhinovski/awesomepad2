@@ -33,7 +33,7 @@ var Router = Backbone.Router.extend({
   },
   show: function(id){
     // Should render the doc
-    this.homeView.set('route', 'show');
+    this.homeView.set({route: 'show', doc: this.documents.get(id)});
     console.log(id);
   }
 });

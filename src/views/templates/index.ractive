@@ -15,5 +15,9 @@
     {{#if routes.edit}}
       {{>editor}}
     {{/if}}
+
+    {{#if routes.show}}
+      {{>show}}
+    {{/if}}
   </main>
 </div>
