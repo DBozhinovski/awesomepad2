@@ -38,6 +38,7 @@ var Home = Ractive.extend({
   save: function(event){
     event.context.documents.add(event.context.doc);
     event.context.doc.save();
+    global.location.hash = '#';
   }
 });
 
